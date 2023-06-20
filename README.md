@@ -8,4 +8,8 @@ A plase where information is stored.
 
   Even though, this video is pretty old, it's one of the best intros to the Git that exists out there.
 
+## Other
+
+- [How the clipboard works](./how-the-clipboard-works.md).
+
 [gettinggit]: https://vimeo.com/14629850
