@@ -18,8 +18,16 @@ A plase where information is stored.
 - [GPS][gps] – how GPS works (same author as Sound).
 - [Anki SRS][ankisrs] – Spaced Repetition System algorithm that powers Anki.
 - [Orbital Mechanics][orbmech] – space, ofc it's cool.
+- [The technology behind GitHub’s new code search][ghsearch] – how GitHub search works now.
+- [Pricing Money][pricingmoney] – A Beginner’s Guide to Money. Bonds, Futures and Swaps.
+- [Minimum Viable Finance][mvf] – finances for dummies for companies.
+- [Migrating Netflix to GraphQL Safely][netflixgql] – How Netflix migrated to GraphQL.
 
 [gettinggit]: https://vimeo.com/14629850
 [ankisrs]: https://www.juliensobczak.com/inspect/2022/05/30/anki-srs.html
 [orbmech]: http://www.braeunig.us/space/orbmech.htm
 [gps]: https://ciechanow.ski/gps/
+[ghsearch]: https://github.blog/2023-02-06-the-technology-behind-githubs-new-code-search/
+[mvf]: https://www.causal.app/blog/the-ultimate-guide-to-finance-for-seed-series-a-companies
+[pricingmoney]: http://www.jdawiseman.com/books/pricing-money/Pricing_Money_JDAWiseman.html
+[netflixgql]: https://netflixtechblog.com/migrating-netflix-to-graphql-safely-8e1e4d4f1e72
