@@ -12,4 +12,8 @@ A plase where information is stored.
 
 - [How the clipboard works](./how-the-clipboard-works.md).
 
+## To read
+
+- [Sound](./sound.md).
+
 [gettinggit]: https://vimeo.com/14629850
