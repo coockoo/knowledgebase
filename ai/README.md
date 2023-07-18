@@ -77,41 +77,45 @@ For image analyzing, CNNs (convolutional neural networks) are used.
 For text understanding, RNN (recurrent neural network) was used. Now transformers mostly.
 Since order of words in sentence is important, CNNs processed one word at a time in a sequence.
 
-RNNs issues:
+#### RNNs issues
 
 - Bad processing of large sequence of text (long paragraphs). Forget beginning at the end.
   Misgender.
 - Hard to train. Vanishing/exploding gradient problem (?).
 - Hard to parallelize due to sequential nature.
 
-How Transformers work:
+#### How Transformers work
 
 1. Positional encodings
 
-Take all of the words in input sentence and add a number for order.
-Move the order from network to data. Easier to train.
+   Take all of the words in input sentence and add a number for order.
+   Move the order from network to data. Easier to train.
 
-```
-[("Dale", 1), ("says", 2), ("hello", 3), ("world", 4)]
-```
+   ```
+   [("Dale", 1), ("says", 2), ("hello", 3), ("world", 4)]
+   ```
 
-Original authors used a sine functions for positional encodings and not 1-2-3-4.
+   Original authors used a sine functions for positional encodings and not 1-2-3-4.
 
 2. Attention
 
-Original paper is called [Attention Is All You Need][att].
+   Original paper is called [Attention Is All You Need][att].
 
-Translation word-by-word is bad, as order might change language-to-language,
-some words may add gender to it, etc.
+   Translation word-by-word is bad, as order might change language-to-language,
+   some words may add gender to it, etc.
 
-Model was trained to pay attention to connections between words, use proper gender etc.
+   Model was trained to pay attention to connections between words, use proper gender etc.
 
 3. Self-attention
 
-Models build up meaningful internal representation of the data they're trained on.
-Self-attention allows a neural network to understand a word in the context of the words around it.
+   Models build up meaningful internal representation of the data they're trained on.
+   Self-attention allows a neural network to understand a word in the context of the words around it.
 
-Ok, this article was not as cool. Gave a bit of insights, but no technical stuff.
+   Ok, this article was not as cool. Gave a bit of insights, but no technical stuff.
+
+## Introduction to Machine Learning course
+
+More details in separate [doc][mlint].
 
 ## Questions
 
@@ -135,3 +139,4 @@ What if models were trained across industries and data and selection so they wou
 [stateofgpt]: https://build.microsoft.com/en-US/sessions/db3f4859-cd30-4445-a0cd-553c3304f8e2
 [transexplained]: https://daleonai.com/transformers-explained
 [att]: https://arxiv.org/pdf/1706.03762.pdf
+[mlint]: ./machine-learning-andrew-ng.md
