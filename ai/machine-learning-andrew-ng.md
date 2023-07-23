@@ -49,6 +49,71 @@ Hypo(size) -> Price
 
 Further notes on this lecture will be made in notebook.
 
+## Lecture 03
+
+Linear Regression – pick parameters theta to make a prediction.
+
+### Locally Weighted Regression
+
+Locally Weighted Regression – pick some local area. and make a straight line in that area.
+
+Fit Theta to minimize different formula.
+
+Same equation, but adding a weight, which will be 0 for far away values and 1 for closer values.
+OMEGACOOL.
+
+Weight function:
+
+$$
+\omega^{(i)} = exp(-\frac{(x^{(i)} - x)^2}{2\tau^2})
+$$
+
+Where $\tau$ – width of the window.
+
+_Note: looks like better prediction in the area, but not full context._
+
+When to use:
+
+- number of features is relatively small 2-3;
+- a lot of data;
+- we don't want to think about what features to use;
+
+### Classification
+
+It's hard to draw a straight line through $y \in \{0,1\}$
+
+Linear regression doesn't really work for that.
+
+### Logistic regression
+
+Want $h_{\theta}(x) \in [0,1]$.
+
+$$
+h_{\theta}(x) = g(\theta^Tx) = \frac{1}{1 + e^{-\theta^Tx}}
+$$
+
+$g(x)$ = Sigmoid = logistic function
+
+### Gradient ascent
+
+Super similar to linear regression. Take babysteps until land in local optimum.
+
+$$
+\theta_j := \theta_j + \alpha(y^{(i)} - h_{\theta}(x^{(i)}))x^{(i)}_j
+$$
+
+_notice the same formula for LR, but with different signs, this is OK, will be covered later_
+
+### Newton's Method
+
+Want to find $f(\theta) = 0$ by maximizing $l(\theta)$, which means that $l'(\theta) = 0$.
+
+Let's find where derivative is equal to 0.
+
+What is f is not monotonous?
+
+Inverting matrix is compute heavy, so a lot of parameters will slow down significantly.
+
 ## Project
 
 Ideas:
