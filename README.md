@@ -2,11 +2,9 @@
 
 A plase where information is stored.
 
-## Git
+## Blockchain
 
-- "[Getting Git][gettinggit]" by Scott Chacon;
-
-  Even though, this video is pretty old, it's one of the best intros to the Git that exists out there.
+- [Blockchain in a nutshell][blockinnut] – Looks like a good intro to how blockchain works.
 
 ## Business
 
@@ -14,6 +12,12 @@ A plase where information is stored.
 
   A quick read with 12 steps of what makes an ideal business.
   No-bullshit checklist.
+
+## Git
+
+- "[Getting Git][gettinggit]" by Scott Chacon;
+
+  Even though, this video is pretty old, it's one of the best intros to the Git that exists out there.
 
 ## Mentorship
 
@@ -47,3 +51,4 @@ Has it's own section [here](./typescript.md).
 [pricingmoney]: http://www.jdawiseman.com/books/pricing-money/Pricing_Money_JDAWiseman.html
 [netflixgql]: https://netflixtechblog.com/migrating-netflix-to-graphql-safely-8e1e4d4f1e72
 [idealbusiness]: https://www.beterinbeleggen.nl/pdf/tsm/The-Perfect-Business-Richard-Russell.pdf
+[blockinnut]: https://arxiv.org/pdf/2205.01091.pdf
