@@ -15,6 +15,10 @@ A plase where information is stored.
   A quick read with 12 steps of what makes an ideal business.
   No-bullshit checklist.
 
+## Mentorship
+
+About [things that help](./mentorship.md) mentors guide mentees.
+
 ## Typescript
 
 Has it's own section [here](./typescript.md).
