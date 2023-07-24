@@ -11,7 +11,7 @@ which is the $n$-vector of partial derivatives
 
 **TODO: Add gradient matrix definition**
 
-The hessian $\nabla^2f(x) of a function $f: \mathbb{R}^n \rightarrow \mathbb{R}$
+The hessian $\nabla^2f(x)$ of a function $f: \mathbb{R}^n \rightarrow \mathbb{R}$
 is the $n \times n$ symmetric matrix of twice partical derivatives,
 
 **TODO: add hessian matrix definition**
