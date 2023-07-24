@@ -8,6 +8,13 @@ A plase where information is stored.
 
   Even though, this video is pretty old, it's one of the best intros to the Git that exists out there.
 
+## Business
+
+- [Ideal Business][idealbusiness] from Dow Theory Letters;
+
+  A quick read with 12 steps of what makes an ideal business.
+  No-bullshit checklist.
+
 ## Typescript
 
 Has it's own section [here](./typescript.md).
@@ -35,3 +42,4 @@ Has it's own section [here](./typescript.md).
 [mvf]: https://www.causal.app/blog/the-ultimate-guide-to-finance-for-seed-series-a-companies
 [pricingmoney]: http://www.jdawiseman.com/books/pricing-money/Pricing_Money_JDAWiseman.html
 [netflixgql]: https://netflixtechblog.com/migrating-netflix-to-graphql-safely-8e1e4d4f1e72
+[idealbusiness]: https://www.beterinbeleggen.nl/pdf/tsm/The-Perfect-Business-Richard-Russell.pdf
