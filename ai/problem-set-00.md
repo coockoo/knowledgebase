@@ -78,6 +78,45 @@ $$
 \nabla_xf(x) = \nabla_xg(h(x)) = g'(h(x))*h'(x)
 $$
 
+### \(c\)
+
+**Let $f(x) = \frac{1}{2}x^TAx+b^Tx$, where $A$ is a symmetric matrix
+and $b \in \mathbb{R}^n$ is a vector. What is $\nabla^2 f(x)$?**
+
+Remembering all of the properties described in the task (a),
+
+$$
+\nabla^2_x f(x)
+= \nabla^2_x(\frac{1}{2}x^TAx+b^Tx)
+= \nabla^2_x(\frac{1}{2}x^TAx) + \nabla^2_x(b^Tx) =
+\newline
+= \frac{1}{2}\nabla^2_x(x^TAx) + \nabla^2_x(b^Tx)
+= \frac{1}{2}2A + 0
+= A
+$$
+
+## (d)
+
+**Let $f(x) = g(aTx)$ where $g : \mathbb{R} \rightarrow \mathbb{R}$
+is continuously differentiable and $a \in \mathbb{R}^n$ is a vector.
+What are $\nabla f(x)$ and $\nabla^2f(x)$?
+(_Hint:_ your expression for $\nabla^2f(x)$ may have as few as 11 symbols,
+including $'$ and parentheses.)**
+
+$$
+\nabla f(x) = \nabla g(a^Tx) = \frac{d}{da^Tx}g(a^Tx) * \frac{d}{dx}a^Tx =
+\newline
+= g'(a^Tx) * a
+$$
+
+$$
+\nabla^2f(x) = \nabla(\nabla f(x)) = \nabla(g'(a^Tx) * a) =
+\newline
+= \nabla(g'(a^Tx))*a = g''(a^Tx)*a*a
+$$
+
+For some reason, there should be $a^T$ at the end, but I cannot figure out why.
+
 [source]: https://cs229.stanford.edu/summer2020/ps0_template.pdf
 [lareview]: https://cs229.stanford.edu/notes2022fall/cs229-linear_algebra_review.pdf
 [chainrule]: https://ocw.mit.edu/courses/18-01-single-variable-calculus-fall-2006/b8051c7c7a28e2cd03667de9dd4865fb_lec4.pdf
