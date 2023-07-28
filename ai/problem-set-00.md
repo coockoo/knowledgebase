@@ -3,7 +3,8 @@
 Source [here][source].
 
 The key for understanding what is needed for solving this problem set lies
-in the [linear algebra review][lareview] document.
+in the [linear algebra review][lareview] document
+and in the [probability theory review and reference][probreview] document.
 
 ## Gradients and Hessians
 
@@ -103,7 +104,7 @@ $$
 = A
 $$
 
-## (d)
+### (d)
 
 **Let $f(x) = g(a^Tx)$ where $g : \mathbb{R} \rightarrow \mathbb{R}$
 is continuously differentiable and $a \in \mathbb{R}^n$ is a vector.
@@ -141,6 +142,28 @@ $$
 As $f(x) \in \mathbb{R}$, so $g''(x) \in \mathbb{R}$, so this can be seen as common
 real value that can be moved outside of the matrix.
 
+## Positive definite matrices
+
+TODO
+
+## Eigenvectors, eigenvalues, and the spectral theorem
+
+TODO
+
+## Probability and multivariate Gaussians
+
+Suppose $X = (X_1, ..X_n)$ is sampled from a multivariate Gaussian distribution
+with mean $\mu$ in $\mathbb{R}^n$ and covariance $\Sigma$ in $S^n_+$
+(i.e. $\Sigma$ is positive semidefinite).
+This is commonly also written as $X \sim \cal{N}(\mu, \Sigma)$.
+
+### (a)
+
+Describe the random variable $Y = X_1 + X_2 + ... + X_n$.
+What is the mean and variance?
+Is this a well known distribution, and if so, which?
+
 [source]: https://cs229.stanford.edu/summer2020/ps0_template.pdf
 [lareview]: https://cs229.stanford.edu/notes2022fall/cs229-linear_algebra_review.pdf
 [chainrule]: https://ocw.mit.edu/courses/18-01-single-variable-calculus-fall-2006/b8051c7c7a28e2cd03667de9dd4865fb_lec4.pdf
+[probreview]: https://cs229.stanford.edu/notes2022fall/cs229-probability_review.pdf
