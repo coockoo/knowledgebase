@@ -17,7 +17,15 @@ which is the $n$-vector of partial derivatives
 The hessian $\nabla^2f(x)$ of a function $f: \mathbb{R}^n \rightarrow \mathbb{R}$
 is the $n \times n$ symmetric matrix of twice partical derivatives,
 
-**TODO: add hessian matrix definition**
+$$
+\nabla^2_xf(x) \in \mathbb{R}^{n \times n} =
+\begin{bmatrix}
+\frac{\partial^2f(x)}{\partial x^2_1} & \frac{\partial^2f(x)}{\partial x_1 \partial x_2} & \dots & \frac{\partial^2f(x)}{\partial x_1 \partial x_n} \\
+\frac{\partial^2f(x)}{\partial x_2 \partial x_1} & \frac{\partial^2f(x)}{\partial x^2_2} & \dots & \frac{\partial^2f(x)}{\partial x_1 \partial x_n} \\
+\vdots & \vdots & \ddots & \vdots \\
+\frac{\partial^2f(x)}{\partial x_n \partial x_1} & \frac{\partial^2f(x)}{\partial x_n \partial x_2} & \dots & \frac{\partial^2f(x)}{\partial x^2_n}
+\end{bmatrix}
+$$
 
 ### (a)
 
@@ -69,13 +77,13 @@ is differentiable. What is $\nabla f(x)$?**
 For solving this problem a [chain rule][chainrule] should be recalled.
 
 $$
-\frac{d}{dx}f(x) = \frac{d}{d(h(x))}g(h(x))*\frac{d}{dx}h(x)
+\frac{d}{dx}f(x) = \frac{d}{d(h(x))}g(h(x))\frac{d}{dx}h(x)
 $$
 
 So, solution to the original question is
 
 $$
-\nabla_xf(x) = \nabla_xg(h(x)) = g'(h(x))*h'(x)
+\nabla_xf(x) = \nabla_xg(h(x)) = g'(h(x))h'(x)
 $$
 
 ### \(c\)
@@ -97,25 +105,41 @@ $$
 
 ## (d)
 
-**Let $f(x) = g(aTx)$ where $g : \mathbb{R} \rightarrow \mathbb{R}$
+**Let $f(x) = g(a^Tx)$ where $g : \mathbb{R} \rightarrow \mathbb{R}$
 is continuously differentiable and $a \in \mathbb{R}^n$ is a vector.
 What are $\nabla f(x)$ and $\nabla^2f(x)$?
 (_Hint:_ your expression for $\nabla^2f(x)$ may have as few as 11 symbols,
 including $'$ and parentheses.)**
 
 $$
-\nabla f(x) = \nabla g(a^Tx) = \frac{d}{da^Tx}g(a^Tx) * \frac{d}{dx}a^Tx =
-\newline
-= g'(a^Tx) * a
+\nabla f(x) = \nabla g(a^Tx) = \frac{d}{da^Tx}g(a^Tx) \frac{d}{dx}a^Tx = g'(a^Tx)a
 $$
 
+Hint to taking Hessian lays on the page 24 and 25 of [review][lareview]
+and definition of the Hessian itself.
+
 $$
-\nabla^2f(x) = \nabla(\nabla f(x)) = \nabla(g'(a^Tx) * a) =
-\newline
-= \nabla(g'(a^Tx))*a = g''(a^Tx)*a*a
+(\nabla^2_xf(x))_{ij}= \frac{\partial^2{f(x)}}{\partial x_i \partial x_j}
 $$
 
-For some reason, there should be $a^T$ at the end, but I cannot figure out why.
+If we are being sloppy, it can be written as
+
+$$
+\nabla^2_xf(x) = \nabla_x(\nabla_xf(x))^T
+$$
+
+So long as we understand that this really means taking the gradient of each entry of
+$\nabla_x(\nabla_xf(x))^T$, not the gradient of the whole vector.
+
+TODO: Try to explain to someone how to get this solution,
+as currently it's a bit hard for me to explain.
+
+$$
+\nabla^2 f(x) = g''(a^Tx) a (\frac{d}{dx}a^Tx)^T = g''(a^Tx)aa^T
+$$
+
+As $f(x) \in \mathbb{R}$, so $g''(x) \in \mathbb{R}$, so this can be seen as common
+real value that can be moved outside of the matrix.
 
 [source]: https://cs229.stanford.edu/summer2020/ps0_template.pdf
 [lareview]: https://cs229.stanford.edu/notes2022fall/cs229-linear_algebra_review.pdf
