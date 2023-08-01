@@ -114,6 +114,28 @@ What is f is not monotonous?
 
 Inverting matrix is compute heavy, so a lot of parameters will slow down significantly.
 
+## Lecture 03
+
+Generalized Linear Models
+
+### Exponential Familty
+
+Depending on the data, we can take different exponential family distribution.
+
+### GLM Training
+
+Training update rule is the same
+
+$$
+\theta_j := \theta_j + \alpha(y^{(i)} - h_{\theta}(x^{(i)}))x_j^{(i)}
+$$
+
+Learning only $\theta$
+
+### Softmax regression
+
+Minimize cross entropy between distributions.
+
 ## Project
 
 Ideas:
