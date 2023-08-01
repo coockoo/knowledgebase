@@ -114,7 +114,7 @@ What is f is not monotonous?
 
 Inverting matrix is compute heavy, so a lot of parameters will slow down significantly.
 
-## Lecture 03
+## Lecture 04
 
 Generalized Linear Models
 
@@ -135,6 +135,41 @@ Learning only $\theta$
 ### Softmax regression
 
 Minimize cross entropy between distributions.
+
+## Lecture 05
+
+Generative Learning Algorithms
+
+Logistic regression – algorithm for searching for the line that separates class values.
+
+Discriminative LA:
+
+- learn $p(y|x)$ (or learn $h_\theta(x) = \begin{cases} 0 \\ 1 \end{cases}$
+
+Generative LA:
+
+- learns $p(x|y)$; what are the features like given the output;
+- class prior $p(y)$;
+
+Bayes rule:
+
+$$
+p(y=1|x) = \frac{p(x|y=1)p(y=1)}{p(x)} \\
+p(x) = p(x|y=1)p(y=1) + p(x|y=0)p(y=0)
+$$
+
+So by learning all of the stuff on the right side of the equation,
+it is possible to calculate $p(y=1|x)$
+
+### Gaussian Discriminant Analysis (GDA)
+
+Assume that $p(x|y)$ is Gaussian.
+
+### Generative & Discriminative comparison
+
+### Native Bayes
+
+Usave: building spam filter
 
 ## Project
 
