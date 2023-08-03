@@ -6,6 +6,11 @@ The key for understanding what is needed for solving this problem set lies
 in the [linear algebra review][lareview] document
 and in the [probability theory review and reference][probreview] document.
 
+This might be called as cheating, but sometimes when I got stuck,
+I used [this][key1] and [this][key2] as reference, while trying to understand why.
+Also, since I'm not a student of the class and have no community to talk to,
+it helped me do some verification of my work.
+
 ## Gradients and Hessians
 
 Recall that a matrix $A \in \mathbb{R}^{n \times n}$ is symmetric if $A^T = A$,
@@ -247,3 +252,5 @@ Is this a well known distribution, and if so, which?
 [lareview]: https://cs229.stanford.edu/notes2022fall/cs229-linear_algebra_review.pdf
 [chainrule]: https://ocw.mit.edu/courses/18-01-single-variable-calculus-fall-2006/b8051c7c7a28e2cd03667de9dd4865fb_lec4.pdf
 [probreview]: https://cs229.stanford.edu/notes2022fall/cs229-probability_review.pdf
+[key1]: https://james-chuang.github.io/notes/cs229/ps0_2016.pdf
+[key2]: https://github.com/waynemystir/stanford-cs229/blob/master/prob-set-0/ps0_key.pdf
