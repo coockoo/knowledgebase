@@ -144,7 +144,87 @@ real value that can be moved outside of the matrix.
 
 ## Positive definite matrices
 
-TODO
+Given matrix $A \in \mathbb{R}^{n \times n}$
+
+It is _positive semi-definite_ (PSD), denoted $A \succeq 0$, if
+
+- $A = A^T$ (symmetric)
+- $x^TAx \geq 0 \; \forall x \in \mathbb{R}^n$.
+
+It is _positive definite_, denoted $A \succ 0$, if
+
+- $A = A^T$ (symmetric)
+- $x^TAx \gt 0 \; \forall x \neq 0$, all non-zero vectors $x$.
+
+The simplest example of a PSD is the identity $I$.
+
+_Note_: it's good to understand that $x^TAx \in \mathbb{R}^1$
+
+### (a)
+
+Let $z \in \mathbb{R}^n$ be an n-vector. Show that $A = zz^T$ is positive semidefinite.
+
+First, let's prove that $A$ is symmetric:
+
+$A_{ij} = z_iz_j$, $A_{ji} = z_jz_i = z_iz_j = A_{ij} \; \forall i,j$
+
+Also, by transpose properties:
+
+- $(A^T)^T = A$
+- $(AB)^T = B^TA^T$
+
+$(zz^T)^T = (z^T)^Tz^T = zz^T$
+
+Second part, using the associativity property of the matrix multiplication
+and the same transpose property:
+
+$(AB)C = A(BC)$
+
+Since $x^Tz \in \mathbb{R}^1$ and this means that $x^Tz = (x^Tz)^T$
+
+$x^TAx = x^Tzz^Tx = x^Tz(x^Tz)^T = (x^Tz)^2 \geq 0$
+
+Which proves that $A = zz^T$ is positive semidefinite.
+
+### (b)
+
+**Let $z \in \mathbb{R}^n$ be a _non-zero n_-vector. Let $A = zz^T$.
+What is the null-space of $A$? What is the rank of $A$?**
+
+What is **nullspace** is defined on the page 13 of [review][lareview].
+
+$$
+\mathcal{N}(A) = \{ x \in \mathbb{R}^n : Ax=0 \}
+$$
+
+$\mathcal{N}(A) = \{ zz^Tx = 0\}$. Since $z$ is a _non-zero n_-vector,
+so it can be removed from the equation and nullspace is $z^Tx=0$.
+
+TODO: calculate rank. I have no idea how to do this and why it's not simply $n$.
+
+### \(c\)
+
+**Let $A \in \mathbb{R}^{n \times n}$ be positive semidefinite
+and $B \in \mathbb{R}^{m \times n}$ be arbitraray, where $m, n \in \mathbb{R}$.
+Is $BAB^T$ PSD? If so, prove it. If not, give a counterexample with explicit $A, B$.**
+
+Let's show that matrix is symmetric. Same properties will be used, as in (a).
+Plus $A = A^T$, as $A$ is PSD.
+
+$(BAB^T)^T = (B^T)^T(BA)^T = BA^TB^T = BAB^T$
+
+Secondly, we'll show that for any arbitrary vector $x$ value is greater or equal to 0.
+
+$x^TBAB^Tx = (B^Tx)^TA(B^Tx)$
+
+If $B$ is arbitrary matrix and $x$ is an arbitrary vector,
+so $x'=B^Tx \in \mathbb{R}^n$ is an arbitrary vector.
+
+And since $A$ is PSD, then for any arbitrary $x'$: $x'^TAx' \geq 0$, which proves that
+$BAB^T$ is PSD.
+
+_Note_: This means that for any given PSD matrix $A$,
+we can multiply it $BAB^T$ by any arbitrary matrix of different size and still get a PSD matrix.
 
 ## Eigenvectors, eigenvalues, and the spectral theorem
 
