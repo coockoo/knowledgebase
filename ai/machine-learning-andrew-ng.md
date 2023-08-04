@@ -167,9 +167,22 @@ Assume that $p(x|y)$ is Gaussian.
 
 ### Generative & Discriminative comparison
 
-### Native Bayes
+### Naive Bayes
 
-Usave: building spam filter
+Generative algorithm.
+
+Usave: building spam filter. Categorize text.
+
+Feature vector x?
+
+- 10000 words and use it as feature set.
+- feature vector for word where 1 where word from dictionary is met 0 if not;
+
+$x \in \{0, 1\}^n$
+
+$x_i = I\{\text{word i appears in email}\}$
+
+Let's assume $x_i$ are conditionally independent given $y$.
 
 ## Project
 
