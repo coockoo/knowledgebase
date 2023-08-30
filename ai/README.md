@@ -117,6 +117,22 @@ Since order of words in sentence is important, CNNs processed one word at a time
 
 More details in separate [doc][mlint].
 
+## The spelled-out intro to neural networks and backpropagation
+
+Okay, now I see that ML Course is a bit tough and math heavy, I want to jump in from another side.
+Start from the applied level and once I've built something that somehow works jump back to the course
+to understand how to fine-tune and optimize stuff and increase understanding of underlying mechanisms.
+
+Back again to Andrej Karpathy with it's ["Let's build micrograd"][microgradvideo] video.
+
+Notes:
+
+- **Backpropagation** – recursively taking local derivatives and applying chanin rule.
+- If we want final neurone value increase, change weights (leaf node values) so their backpropagated gradients increase.
+- Forward pass – calculate data (value) based on leaf node values. Backward pass – calculate graadients.
+- Pytorch – bigger version of micrograd. Micrograd – scalar values, pytorch – tensors (vectors).
+- Usually we don't need gradients for leaf nodes (for efficiency).
+
 ## Questions
 
 - Is there a possibility to write autotests on models?
@@ -140,3 +156,4 @@ What if models were trained across industries and data and selection so they wou
 [transexplained]: https://daleonai.com/transformers-explained
 [att]: https://arxiv.org/pdf/1706.03762.pdf
 [mlint]: ./machine-learning-andrew-ng.md
+[microgradvideo]: https://youtu.be/VMj-3S1tku0
