@@ -6,6 +6,7 @@ Let's begin the journey with some entrypoints that will be used:
 - Stanford [AI courses][stanfordai];
 - Google [Generative AI learning path][googlegenaipath];
 - Some [ML Book][mlbook] that was found on the internet;
+- Anti-hype LLM [reading list][llmreadinglist];
 
 ## Gentle introduction
 
@@ -157,3 +158,4 @@ What if models were trained across industries and data and selection so they wou
 [att]: https://arxiv.org/pdf/1706.03762.pdf
 [mlint]: ./machine-learning-andrew-ng.md
 [microgradvideo]: https://youtu.be/VMj-3S1tku0
+[llmreadinglist]: https://gist.github.com/veekaybee/be375ab33085102f9027853128dc5f0e
