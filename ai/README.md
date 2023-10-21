@@ -7,6 +7,8 @@ Let's begin the journey with some entrypoints that will be used:
 - Google [Generative AI learning path][googlegenaipath];
 - Some [ML Book][mlbook] that was found on the internet;
 - Anti-hype LLM [reading list][llmreadinglist];
+- Another [Understanding Deep Learning][dlbook] that was found on the internet;
+- [A Hackers' Guide to Language Models][hackersguidelm] video;
 
 ## Gentle introduction
 
@@ -134,6 +136,14 @@ Notes:
 - Pytorch – bigger version of micrograd. Micrograd – scalar values, pytorch – tensors (vectors).
 - Usually we don't need gradients for leaf nodes (for efficiency).
 
+## Let's build GPT: from scratch, in code, spelled out.
+
+Andrej now sptis fire with his another ["Let's build GPT: from scratch, in code, spelled out."][gptvideo] video.
+
+[Attention Is All You Need][att] breakthrough article.
+
+Building transformer-based language model. Dataset – tinysheakspeare.
+
 ## Questions
 
 - Is there a possibility to write autotests on models?
@@ -159,3 +169,6 @@ What if models were trained across industries and data and selection so they wou
 [mlint]: ./machine-learning-andrew-ng.md
 [microgradvideo]: https://youtu.be/VMj-3S1tku0
 [llmreadinglist]: https://gist.github.com/veekaybee/be375ab33085102f9027853128dc5f0e
+[gptvideo]: https://youtu.be/kCc8FmEb1nY
+[dlbook]: https://udlbook.github.io/udlbook/
+[hackersguidelm]: https://youtu.be/jkrNMKz9pWU
