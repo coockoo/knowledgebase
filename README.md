@@ -27,6 +27,22 @@ A plase where information is stored.
 
 About [things that help](./mentorship.md) mentors guide mentees.
 
+## Programming
+
+- [The Grug Brained Developer][grug] from creator of HTMX;
+
+  Great article about complexity in software development.
+  Narrated in the funny manner from the Grug, who is convinced that "complexity very, very bad".
+
+- [The Tao of Programming][tao] translated by Geoffrey James;
+
+  Collection of stories, collected in the spiritual format about programming.
+  Not much educational, but rather entertaining and thought provoking.
+
+# Travel
+
+Has it's own section [here](./travel.md).
+
 ## Typescript
 
 Has it's own section [here](./typescript.md).
@@ -59,3 +75,5 @@ Has it's own section [here](./typescript.md).
 [blockinnut]: https://arxiv.org/pdf/2205.01091.pdf
 [lcalc]: https://www.cs.rpi.edu/academics/courses/spring11/proglang/handouts/lambda-calculus-chapter.pdf
 [railway]: https://fsharpforfunandprofit.com/rop/
+[grug]: https://grugbrain.dev/
+[tao]: https://www.mit.edu/~xela/tao.html
