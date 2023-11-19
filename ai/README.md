@@ -9,6 +9,7 @@ Let's begin the journey with some entrypoints that will be used:
 - Anti-hype LLM [reading list][llmreadinglist];
 - Another [Understanding Deep Learning][dlbook] that was found on the internet;
 - [A Hackers' Guide to Language Models][hackersguidelm] video;
+- [Deep Learning Course][deepcourse] thorough introduction to deep-learning, with examples in the PyTorch framework;
 
 ## Gentle introduction
 
@@ -172,3 +173,4 @@ What if models were trained across industries and data and selection so they wou
 [gptvideo]: https://youtu.be/kCc8FmEb1nY
 [dlbook]: https://udlbook.github.io/udlbook/
 [hackersguidelm]: https://youtu.be/jkrNMKz9pWU
+[deepcourse]: https://fleuret.org/dlc/
