@@ -10,6 +10,7 @@ Let's begin the journey with some entrypoints that will be used:
 - Another [Understanding Deep Learning][dlbook] that was found on the internet;
 - [A Hackers' Guide to Language Models][hackersguidelm] video;
 - [Deep Learning Course][deepcourse] thorough introduction to deep-learning, with examples in the PyTorch framework;
+- [The architecture of today’s LLM applications][llmarchitecture] article on GitHub blog;
 
 ## Gentle introduction
 
@@ -174,3 +175,4 @@ What if models were trained across industries and data and selection so they wou
 [dlbook]: https://udlbook.github.io/udlbook/
 [hackersguidelm]: https://youtu.be/jkrNMKz9pWU
 [deepcourse]: https://fleuret.org/dlc/
+[llmarchitecture]: https://github.blog/2023-10-30-the-architecture-of-todays-llm-applications/
