@@ -29,15 +29,7 @@ About [things that help](./mentorship.md) mentors guide mentees.
 
 ## Programming
 
-- [The Grug Brained Developer][grug] from creator of HTMX;
-
-  Great article about complexity in software development.
-  Narrated in the funny manner from the Grug, who is convinced that "complexity very, very bad".
-
-- [The Tao of Programming][tao] translated by Geoffrey James;
-
-  Collection of stories, collected in the spiritual format about programming.
-  Not much educational, but rather entertaining and thought provoking.
+Has it's own section [here](./programming.md).
 
 # Travel
 
