@@ -67,5 +67,3 @@ Has it's own section [here](./typescript.md).
 [blockinnut]: https://arxiv.org/pdf/2205.01091.pdf
 [lcalc]: https://www.cs.rpi.edu/academics/courses/spring11/proglang/handouts/lambda-calculus-chapter.pdf
 [railway]: https://fsharpforfunandprofit.com/rop/
-[grug]: https://grugbrain.dev/
-[tao]: https://www.mit.edu/~xela/tao.html
