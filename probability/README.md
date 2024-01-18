@@ -107,13 +107,30 @@ but for second part formula is needed.
 I think I saw the pattern and comparison to the "raw" version gives
 
 $$
-N = \frac{len(word)!}{\prod{count(letter in word)!}}
+N = \frac{len(word)!}{\prod_{letter}{count(letter)!}}
 $$
 
 But this is a naiive approach, not backed by the knowledge of theory,
 just solving, looking at the numbers and spotting some patterns.
 
 Result: 34650
+
+### Permutations
+
+Permutation is **ordered** arrangement of objects.
+
+If elements of the permutation are **distinct** – number of permutations is $n!$.
+
+If not – this is a way to look at it:
+
+Permutation of distinct objects =
+permutations of some objects are indistinct X permutations of indistinct objects.
+
+Given $n_i$ – group of indistinguishable elements within $n$.
+
+$$
+N = \frac{n!}{\prod_{i}{n_i!}}
+$$
 
 [cs109]: https://web.stanford.edu/class/archive/cs/cs109/cs109.1234/
 [videos]: https://www.youtube.com/watch?v=2MuDZIAzBMY&list=PLoROMvodv4rOpr_A7B9SriE_iZmkanvUg

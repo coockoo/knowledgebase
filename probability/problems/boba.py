@@ -1,5 +1,6 @@
 from math import factorial
 from sys import argv
+from itertools import permutations
 
 
 mode = argv[1] if len(argv) > 1 else "fast"
@@ -33,7 +34,13 @@ def solve_raw(letters: list, current: str = "", res: set = None):
     return res
 
 
-words = ["ABCD", "BOBA", "MISSISSIPPI"]
+words = ["ABCD", "BOBA", "MISSISSIPPI", "10100"]
 for word in words:
-    res = len(solve_raw(list(word))) if mode == "slow" else solve(word)
+    res = ""
+    if mode == "slow":
+        res = len(solve_raw(list(word)))
+    elif mode == "lib":
+        res = len(set(permutations(list(word))))
+    else:
+        res = solve(word)
     print(word, res)
