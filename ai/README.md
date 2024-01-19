@@ -11,6 +11,7 @@ Let's begin the journey with some entrypoints that will be used:
 - [A Hackers' Guide to Language Models][hackersguidelm] video;
 - [Deep Learning Course][deepcourse] thorough introduction to deep-learning, with examples in the PyTorch framework;
 - [The architecture of today’s LLM applications][llmarchitecture] article on GitHub blog;
+- [Understanding and Coding Attention][understandatt] probably would be good to read;
 
 ## Gentle introduction
 
@@ -176,3 +177,4 @@ What if models were trained across industries and data and selection so they wou
 [hackersguidelm]: https://youtu.be/jkrNMKz9pWU
 [deepcourse]: https://fleuret.org/dlc/
 [llmarchitecture]: https://github.blog/2023-10-30-the-architecture-of-todays-llm-applications/
+[understandatt]: https://magazine.sebastianraschka.com/p/understanding-and-coding-self-attention
