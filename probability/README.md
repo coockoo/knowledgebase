@@ -132,5 +132,64 @@ $$
 N = \frac{n!}{\prod_{i}{n_i!}}
 $$
 
+### Combinations
+
+$$
+N = \frac{n!}{k!(n-k)!}
+$$
+
+Good way of thinking about the problem above is that:
+
+- order $n$ elements in $n!$ ways;
+- virtually divide elements for "picked" and "non-picked";
+- remove overcounting (like in previous) of "picked" and "non-picked" by dividing;
+
+By counting $n!$, different permutations of "picked" and "non-picked" were created.
+
+Binomial coefficient:
+
+$$
+\begin{pmatrix}
+n\\
+k
+\end{pmatrix}
+
+=
+
+\begin{pmatrix}
+n\\
+n - k
+\end{pmatrix}
+$$
+
+The thing above works if items are distinct. If they are all indistinct – result is 1.
+
+### Put object in buckets
+
+#### Distinct
+
+Distinct object in distinct bucket: $r^n$, where $r$ – number of distinct buckets,
+$n$ – number of objects.
+
+#### Indistinct
+
+Dividers. Think about ordering of both elements and dividers.
+
+- elements indistinct;
+- dividers indistinct;
+
+$$
+N = \frac{(n + r - 1)!}{n! (r - 1)!}
+$$
+
+or in the binomial coefficient:
+
+$$
+\begin{pmatrix}
+n + r - 1\\
+r - 1
+\end{pmatrix}
+$$
+
 [cs109]: https://web.stanford.edu/class/archive/cs/cs109/cs109.1234/
 [videos]: https://www.youtube.com/watch?v=2MuDZIAzBMY&list=PLoROMvodv4rOpr_A7B9SriE_iZmkanvUg
