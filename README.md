@@ -54,6 +54,7 @@ Has it's own section [here](./typescript.md).
 - [Minimum Viable Finance][mvf] – finances for dummies for companies.
 - [Migrating Netflix to GraphQL Safely][netflixgql] – How Netflix migrated to GraphQL.
 - [$\lambda$ Calculus][lcalc] – Basics of the functional programming.
+- [Crafting Interpreters][interpreters] - A great book about creating interpreters.
 
 [gettinggit]: https://vimeo.com/14629850
 [ankisrs]: https://www.juliensobczak.com/inspect/2022/05/30/anki-srs.html
@@ -67,3 +68,4 @@ Has it's own section [here](./typescript.md).
 [blockinnut]: https://arxiv.org/pdf/2205.01091.pdf
 [lcalc]: https://www.cs.rpi.edu/academics/courses/spring11/proglang/handouts/lambda-calculus-chapter.pdf
 [railway]: https://fsharpforfunandprofit.com/rop/
+[interpreters]: https://craftinginterpreters.com/
