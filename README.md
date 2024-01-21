@@ -27,6 +27,10 @@ A plase where information is stored.
 
 About [things that help](./mentorship.md) mentors guide mentees.
 
+## Parenting
+
+Has it's own section [here](./parenting.md).
+
 ## Programming
 
 Has it's own section [here](./programming.md).
