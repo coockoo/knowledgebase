@@ -31,10 +31,16 @@ This is an evolving opinionated list of nice to have things.
 
 ## Data-Oriented Design
 
-Based on the Data-Oriented Design [book] by Richard Fabian
+Based on the Data-Oriented Design [book][dodbook] by Richard Fabian
 
-It's all about the data.
-All the applications that have ever been written, have been written to output data based on some input data.
+### Overview
+
+Currently it feels like reading "oop is bad and data is great" over and over again.
+
+### It's all about the data.
+
+All the applications that have ever been written,
+have been written to output data based on some input data.
 
 Data is nothing without it's meaning. What is 4 vs what is 4 bananas?
 
@@ -45,6 +51,44 @@ coffee shops and parks, you can often get stuck in thinking about the problem do
 
 Instead of planning to be extendable, it plans to be simple and replaceable, and get the job done.
 Extendable can be added later.
+
+### Relational databases
+
+**First normal form** can be described as making sure the tables are not sparse.
+
+- every cell contains one and only one atomic value (no arrays, no nulls);
+- every row distinct (existence of primary key PK);
+
+Moving the repeats and all the optional content to other tables.
+If we store data like this, then we know everything is not NULL.
+
+_note_ This is interesting, as during SELECT complex query will be needed where will be `null`s,
+or multiple queries, which is not good due to I/O bottlenecks.
+`UPDATE`s look easier, as there won't be `null`s. Also write becomes faster. Theoretically.
+
+**Second normal form** is about trying to pull out columns that don't depend on
+only a part of the PK.
+
+- 1NF
+- remove columns that depend only on part of the PK;
+
+**Third normal form** is about all the attributes (e.g. database columns)
+are functionally dependent on solely a key.
+
+- 2NF
+- remove transitive dependencies;
+
+**Boyce-Codd normal form** is a bit stricter version of 3NF
+
+- 3NF
+- remove functional dependencies;
+
+**Domain knowledge normal form** adjusts data structure to your domain.
+It allows removing some unnecessarily stored data.
+
+All of this normalizations is about splitting data and trying to replace
+arrays/nulls/duplication with relations.
+It's up to you to decide how far to go when normalizing, as it adds complexity too.
 
 [grug]: https://grugbrain.dev/
 [tao]: https://www.mit.edu/~xela/tao.html
