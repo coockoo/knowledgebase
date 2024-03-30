@@ -1,5 +1,7 @@
 # Problem set 1
 
+DISCLAIMER: I have no way of verifying if these are correct, but they feel correct.
+
 Answers to [these problems][pset1]
 
 ## Seat 10 people
@@ -45,5 +47,12 @@ $$
 $$
 N = 5! * 2!^5 = 3840
 $$
+
+## Zoo exhibit
+
+### No restrictions
+
+- select 3 birds out of 8;
+- select 3 reptiles out of 6;
 
 [pset1]: https://web.stanford.edu/class/archive/cs/cs109/cs109.1208/psets/pset1.pdf
