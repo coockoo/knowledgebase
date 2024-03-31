@@ -90,6 +90,56 @@ All of this normalizations is about splitting data and trying to replace
 arrays/nulls/duplication with relations.
 It's up to you to decide how far to go when normalizing, as it adds complexity too.
 
+## Existential processing
+
+In the paper Out of the Tar Pit, it's concluded that the aspect of software
+which causes the most complexity is state.
+
+If we begin our attempt to eliminate control flow by looking at defensive programming,
+we can try to keep our working set of data as a collections of arrays.
+This way we can guarantee none of our data will be NULL.
+(This is interesting, but why?)
+
+Data processing types:
+
+- filter – take incoming data and produce 0 or 1 element for each input element;
+- mutation – produce 1 and only 1 element for each input element;
+- emission – prodce 0-inf elements from input data;
+- generation – produce data from no input data;
+
+Explicit boolean can be replaced by existence of record in some table
+
+E.g
+
+```
+# from this
+table Players {
+  int id
+  float health
+}
+is_hurt = player.health < MAX_HEALTH
+
+# to this
+table Damages {
+  float health
+}
+map<player_id, Damages> damages
+is_hurt = damages.has(player.id)
+```
+
+And instead of iterating over all of the players and calculate "regeneration" to health,
+only entities from the `damages` can be used.
+Interesting idea. One concern only that data is spread. But that's the point, huh?
+
+Same with enums. Enum is a derivative of the data or existence of it in table.
+They can be useful sometimes: keybindings, colors, small finite sets of values,
+functions that return collision responses.
+
+Dynamic runtime polymorphism can be replaced with switching between tables.
+
+Subscription becomes and insert, and unsubscribing a delete.
+Event handling is replaced with triggers on create/update/delete.
+
 [grug]: https://grugbrain.dev/
 [tao]: https://www.mit.edu/~xela/tao.html
 [dodbook]: https://www.dataorienteddesign.com/dodbook/dodmain.html
