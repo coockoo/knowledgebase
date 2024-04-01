@@ -140,6 +140,37 @@ Dynamic runtime polymorphism can be replaced with switching between tables.
 Subscription becomes and insert, and unsubscribing a delete.
 Event handling is replaced with triggers on create/update/delete.
 
+## Component Based Objects
+
+**Object-Oriented design**
+
+- there is a class that has properties;
+- _is-a_ relationship;
+
+**Composition-Oriented design**
+
+- object = bag of it's components; it does not even have to be named;
+- _has-a_ relationship;
+
+Using components means the entity type doesn't need to have the ability to do anything.
+Instead, all the attributes and functionality come from the components
+of which the entity is made.
+Managers control updates to each component. Manager knows when/how often to update components.
+So why do we need an entity? Let's just operate on array/map of components.
+
+## Talk ideas
+
+Idea.
+
+I'd like to make a talk about this approach, as it sounds refreshing.
+
+- Start with the class with properties. Let's refactor it.
+- Normal forms;
+- existential processing;
+- Initial class refactoring
+
+Basically go chapter-by-chapter removing extra info.
+
 [grug]: https://grugbrain.dev/
 [tao]: https://www.mit.edu/~xela/tao.html
 [dodbook]: https://www.dataorienteddesign.com/dodbook/dodmain.html
