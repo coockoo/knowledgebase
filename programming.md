@@ -158,6 +158,25 @@ of which the entity is made.
 Managers control updates to each component. Manager knows when/how often to update components.
 So why do we need an entity? Let's just operate on array/map of components.
 
+## Hierarchical Level of Detail
+
+If there are a lot of objects to handle, they could be grouped into larger objects.
+This is primarily related to gamedev. A lot of units can be grouped into squadron.
+And once level of detail require units, squadron can break into units again.
+
+When a high detail entity drops to a lower level of detail,
+it should store a memento, a small, well-compressed nugget of data that contains
+all the necessary information in order to rebuild the higher detail entity
+from the lower detail one.
+
+If you have some objects randomly generated, there is no need to memo the whole object.
+The point is, once you have seeded the random number generator,
+you're going to get the same results back every time you run through the same process.
+
+The true metric of level of detail should be how much of our perception an entity is taking up.
+
+This is a gamedev chapter. Nice to know though.
+
 ## Talk ideas
 
 Idea.
