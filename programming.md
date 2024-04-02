@@ -177,6 +177,50 @@ The true metric of level of detail should be how much of our perception an entit
 
 This is a gamedev chapter. Nice to know though.
 
+## Searching
+
+JIT indexes is an interesting idea.
+
+- there is a query that selects data;
+- after some amount of calls, this query can spot patterns;
+- using these patterns, query can "hook" itself to create/update/delete operations;
+- now this query returns cache and does not do search;
+- this query can do realtime stats of what searches are used the most;
+
+Sorry, I don't remember c
+
+```c
+// assuming array is ordered, find first value that exceeds
+// p = property
+int i;
+
+// slower – properties in structures laid down consequentially:  p1p2p3p4p5 p1p2p3p4p5 ...
+for (i = 0; i < num; ++i) {
+  if (objects[i].value >= value) {
+    return objects[i]
+  }
+}
+
+// faster - only values here, p1 p1 p1 p1 ...
+for (i = 0; i < num; ++i) {
+  if (values[i] >= value) {
+    reutrn objects[i]
+  }
+}
+```
+
+This is faster because the cache will be filled with mostly relevant data
+during the hunt phase. In the original layout,
+we one or two key times per cache line.
+In the updated code, we see 16 key times per cache line.
+Two different data layouts for an algorithm could have more impact than the algorithm used.
+
+If the reason for searching is to find something within a range,
+then the problem isn't really one of searching, but one of sorting.
+
+One cool trick is to store alongside big array of something, smaller array
+and update them in parallel. And to search in small array. For example, top value.
+
 ## Talk ideas
 
 Idea.
@@ -184,6 +228,7 @@ Idea.
 I'd like to make a talk about this approach, as it sounds refreshing.
 
 - Start with the class with properties. Let's refactor it.
+  Can be in the area of work of the team. Pick something that is currently in use.
 - Normal forms;
 - existential processing;
 - Initial class refactoring
