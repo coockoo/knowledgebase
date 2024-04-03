@@ -221,6 +221,17 @@ then the problem isn't really one of searching, but one of sorting.
 One cool trick is to store alongside big array of something, smaller array
 and update them in parallel. And to search in small array. For example, top value.
 
+## Sorting
+
+Know your use-case and your data. There are stable sorts and unstable (usually quicker).
+
+For top/bot N values there is a **quickselect algorithm**.
+It finds n-th lowest/biggest item in unordered list and pivot will separate
+values that lower and values that higher than found value.
+
+Bubble sort can be useful. Inline implementations can be small enough for the whole
+of the data and the algorithm to fit in cache (for small n).
+
 ## Talk ideas
 
 Idea.
