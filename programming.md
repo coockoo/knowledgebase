@@ -232,6 +232,29 @@ values that lower and values that higher than found value.
 Bubble sort can be useful. Inline implementations can be small enough for the whole
 of the data and the algorithm to fit in cache (for small n).
 
+## Optimisations and implementations
+
+Premature optimisation is when you optimise something
+without knowing whether it will make a difference.
+
+Measure first then optimize, otherwise there is nothing to rely on when optimizing.
+
+Aim for immediate feedback.
+
+Give your systems a budget. Record violations and raise it as issues immediately.
+
+- keep track of what you do;
+- define problem (factual, clear);
+- measure what needs to be measured;
+- analyze (guess and make predictions);
+- implement (fix the problem);
+- confirm (create report for others to see);
+
+Only using a very small amount of the loaded data
+is one of the most common sins of the object-oriented programmer.
+
+Column-oriented databases = structs of arrays see listing in searching.
+
 ## Talk ideas
 
 Idea.
