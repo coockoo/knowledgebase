@@ -1,43 +1,20 @@
-# Programming
-
-## Values of a good programmer
-
-This is an evolving opinionated list of nice to have things.
-
-- product first;
-  - selecting not ideal tool for building the product is fine;
-  - don't let the process prevail over product;
-  - talk to users;
-- deliver fast;
-  - some things, like user data privacy or security are exceptions;
-  - raw unfinished working product is better than state-of-the-art one in the archive;
-- iterate fast till perfection;
-  - environment, metrics, team communication should be optimized;
-- straight and direct feedback;
-  - does not assume being rude; don't be an asshole;
-  - even joke-like toxicity can be a small crack towards canyon;
-
-## Nice to read articles
-
-- [The Grug Brained Developer][grug] from creator of HTMX;
-
-  Great article about complexity in software development.
-  Narrated in the funny manner from the Grug, who is convinced that "complexity very, very bad".
-
-- [The Tao of Programming][tao] translated by Geoffrey James;
-
-  Collection of stories, collected in the spiritual format about programming.
-  Not much educational, but rather entertaining and thought provoking.
-
-## Data-Oriented Design
+# Data-Oriented Design
 
 Based on the Data-Oriented Design [book][dodbook] by Richard Fabian
 
-### Overview
+## Overview
 
-Currently it feels like reading "oop is bad and data is great" over and over again.
+- OOP is trash;
+- your application is input data -> transformations -> output data;
+- it's easy to process raw data, as there are far more tools for that;
+- prefer simple and replaceable over extendable, which can be added later;
+- data normalization makes some things easier;
+- boolean/enum can be replaced with data existence; polymorphism - switching tables;
+- state brings the most complexity;
+- entity = bag of it's components;
+- oop objects are not systems, errors in communications between objects;
 
-### It's all about the data.
+## It's all about the data.
 
 All the applications that have ever been written,
 have been written to output data based on some input data.
@@ -52,7 +29,7 @@ coffee shops and parks, you can often get stuck in thinking about the problem do
 Instead of planning to be extendable, it plans to be simple and replaceable, and get the job done.
 Extendable can be added later.
 
-### Relational databases
+## Relational databases
 
 **First normal form** can be described as making sure the tables are not sparse.
 
@@ -260,7 +237,6 @@ Column-oriented databases = structs of arrays see listing in searching.
 Programmers only need to be in the zone if the code is nearing deadly levels of complexity.
 
 Whenever you assign a value to a variable, you are destroying history.
-Multiple returns per function is fine.
 
 Instead of hiding, data-oriented suggests keeping data in simple forms.
 
@@ -277,7 +253,7 @@ stateful data and stateless transforms.
 
 How many grains of sand are a pile, are a dune?
 
-Reduced coupling and better testing.
+OOP Reduced coupling and better testing?
 Object-oriented design suffers from the problem of errors in communication.
 Objects are not systems.
 
@@ -296,6 +272,4 @@ I'd like to make a talk about this approach, as it sounds refreshing.
 Basically go chapter-by-chapter removing extra info.
 Last chapeters are much closer to the gamedev and much more specific to it than I expected.
 
-[grug]: https://grugbrain.dev/
-[tao]: https://www.mit.edu/~xela/tao.html
 [dodbook]: https://www.dataorienteddesign.com/dodbook/dodmain.html
