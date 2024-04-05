@@ -273,6 +273,14 @@ Simple data = more existing transformations can be applied to it without "adapte
 When you're doing data-oriented development your software is entirely driven by
 stateful data and stateless transforms.
 
+## Last chapter
+
+How many grains of sand are a pile, are a dune?
+
+Reduced coupling and better testing.
+Object-oriented design suffers from the problem of errors in communication.
+Objects are not systems.
+
 ## Talk ideas
 
 Idea.
