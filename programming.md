@@ -255,6 +255,24 @@ is one of the most common sins of the object-oriented programmer.
 
 Column-oriented databases = structs of arrays see listing in searching.
 
+## Maintenance and reuse
+
+Programmers only need to be in the zone if the code is nearing deadly levels of complexity.
+
+Whenever you assign a value to a variable, you are destroying history.
+Multiple returns per function is fine.
+
+Instead of hiding, data-oriented suggests keeping data in simple forms.
+
+Reusability comes from being aware of the information contained within the medium it is stored.
+In our case, it is normally stored as source code, but the information is not the source code.
+The information is the order and existence of tasks that can and will be performed on the data.
+
+Simple data = more existing transformations can be applied to it without "adapters".
+
+When you're doing data-oriented development your software is entirely driven by
+stateful data and stateless transforms.
+
 ## Talk ideas
 
 Idea.
@@ -268,6 +286,7 @@ I'd like to make a talk about this approach, as it sounds refreshing.
 - Initial class refactoring
 
 Basically go chapter-by-chapter removing extra info.
+Last chapeters are much closer to the gamedev and much more specific to it than I expected.
 
 [grug]: https://grugbrain.dev/
 [tao]: https://www.mit.edu/~xela/tao.html
