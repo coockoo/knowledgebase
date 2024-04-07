@@ -33,7 +33,11 @@ Has it's own section [here](./parenting.md).
 
 ## Programming
 
-Has it's own section [here](./programming.md).
+Has it's own section [here](./programming/README.md).
+
+## Random
+
+Has it's own section [here](./random/README.md).
 
 # Travel
 
