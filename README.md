@@ -64,6 +64,7 @@ Has it's own section [here](./typescript.md).
 - [$\lambda$ Calculus][lcalc] – Basics of the functional programming.
 - [Monads for functional programming][monads] – Side effects in functional programming.
 - [Crafting Interpreters][interpreters] - A great book about creating interpreters.
+- [HPACK][hpack] - silent killer feature of http/2
 
 [gettinggit]: https://vimeo.com/14629850
 [ankisrs]: https://www.juliensobczak.com/inspect/2022/05/30/anki-srs.html
@@ -79,3 +80,4 @@ Has it's own section [here](./typescript.md).
 [railway]: https://fsharpforfunandprofit.com/rop/
 [interpreters]: https://craftinginterpreters.com/
 [monads]: https://homepages.inf.ed.ac.uk/wadler/papers/marktoberdorf/baastad.pdf
+[hpack]: https://blog.cloudflare.com/hpack-the-silent-killer-feature-of-http-2

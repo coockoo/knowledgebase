@@ -88,4 +88,8 @@ For this I would do no restrictions and remove where one bird and one reptile.
 
 Result 910
 
+## Programming classes
+
+### Not in any class
+
 [pset1]: https://web.stanford.edu/class/archive/cs/cs109/cs109.1208/psets/pset1.pdf
