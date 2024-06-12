@@ -33,5 +33,9 @@ Has it's own [section](./data-oriented-design.md).
   Collection of stories, collected in the spiritual format about programming.
   Not much educational, but rather entertaining and thought provoking.
 
+## Web
+
+Has it's own [section](./web.md).
+
 [grug]: https://grugbrain.dev/
 [tao]: https://www.mit.edu/~xela/tao.html
