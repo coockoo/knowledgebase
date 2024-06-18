@@ -21,6 +21,10 @@ This is an evolving opinionated list of nice to have things.
 
 Has it's own [section](./data-oriented-design.md).
 
+## Functional Programming
+
+Has it's own [section](./functional.md)
+
 ## Nice to read articles
 
 - [The Grug Brained Developer][grug] from creator of HTMX;

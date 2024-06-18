@@ -13,10 +13,6 @@ A plase where information is stored.
   A quick read with 12 steps of what makes an ideal business.
   No-bullshit checklist.
 
-## Functional Programming
-
-- [Railway Oriented Programming][railway] – Slides and videos explaining a functional approach to error handling.
-
 ## Git
 
 - "[Getting Git][gettinggit]" by Scott Chacon;
@@ -61,8 +57,6 @@ Has it's own section [here](./typescript.md).
 - [Pricing Money][pricingmoney] – A Beginner’s Guide to Money. Bonds, Futures and Swaps.
 - [Minimum Viable Finance][mvf] – finances for dummies for companies.
 - [Migrating Netflix to GraphQL Safely][netflixgql] – How Netflix migrated to GraphQL.
-- [$\lambda$ Calculus][lcalc] – Basics of the functional programming.
-- [Monads for functional programming][monads] – Side effects in functional programming.
 - [Crafting Interpreters][interpreters] - A great book about creating interpreters.
 - [HPACK][hpack] - silent killer feature of http/2
 
@@ -76,8 +70,5 @@ Has it's own section [here](./typescript.md).
 [netflixgql]: https://netflixtechblog.com/migrating-netflix-to-graphql-safely-8e1e4d4f1e72
 [idealbusiness]: https://www.beterinbeleggen.nl/pdf/tsm/The-Perfect-Business-Richard-Russell.pdf
 [blockinnut]: https://arxiv.org/pdf/2205.01091.pdf
-[lcalc]: https://www.cs.rpi.edu/academics/courses/spring11/proglang/handouts/lambda-calculus-chapter.pdf
-[railway]: https://fsharpforfunandprofit.com/rop/
 [interpreters]: https://craftinginterpreters.com/
-[monads]: https://homepages.inf.ed.ac.uk/wadler/papers/marktoberdorf/baastad.pdf
 [hpack]: https://blog.cloudflare.com/hpack-the-silent-killer-feature-of-http-2
