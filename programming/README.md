@@ -17,9 +17,10 @@ This is an evolving opinionated list of nice to have things.
   - does not assume being rude; don't be an asshole;
   - even joke-like toxicity can be a small crack towards canyon;
 
-## Data-Oriented Design
+## Books
 
-Has it's own [section](./data-oriented-design.md).
+- [Data-Oriented Design](./data-oriented-design.md)
+- [Structure and Interpretation of Computer Programs](./sicp.md)
 
 ## Functional Programming
 
@@ -41,5 +42,12 @@ Has it's own [section](./functional.md)
 
 Has it's own [section](./web.md).
 
+## To Read
+
+- [Notes on Structured Programming][notesonsp] by Edsger W. Dijkstra
+- [An Introduction to Assembly Programming with RISC-V][riskv] Introduction to assembly programming
+
 [grug]: https://grugbrain.dev/
 [tao]: https://www.mit.edu/~xela/tao.html
+[notesonsp]: https://www.cs.utexas.edu/users/EWD/ewd02xx/EWD249.PDF
+[riskv]: https://riscv-programming.org/book/riscv-book.html
