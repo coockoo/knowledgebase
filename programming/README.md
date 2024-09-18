@@ -46,8 +46,10 @@ Has it's own [section](./web.md).
 
 - [Notes on Structured Programming][notesonsp] by Edsger W. Dijkstra
 - [An Introduction to Assembly Programming with RISC-V][riskv] Introduction to assembly programming
+- [Computer Systems A Programmer’s Perspective][compsys] about low-level C programming
 
 [grug]: https://grugbrain.dev/
 [tao]: https://www.mit.edu/~xela/tao.html
 [notesonsp]: https://www.cs.utexas.edu/users/EWD/ewd02xx/EWD249.PDF
 [riskv]: https://riscv-programming.org/book/riscv-book.html
+[compsys]: https://www.cs.sfu.ca/~ashriram/Courses/CS295/assets/books/CSAPP_2016.pdf
