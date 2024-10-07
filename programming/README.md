@@ -17,6 +17,10 @@ This is an evolving opinionated list of nice to have things.
   - does not assume being rude; don't be an asshole;
   - even joke-like toxicity can be a small crack towards canyon;
 
+## Maintenance
+
+With each new line of code there is added maintenance burden for the years to come.
+
 ## Books
 
 - [Data-Oriented Design](./data-oriented-design.md)
