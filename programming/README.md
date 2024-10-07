@@ -21,6 +21,16 @@ This is an evolving opinionated list of nice to have things.
 
 With each new line of code there is added maintenance burden for the years to come.
 
+Try to keep [complexity demon][grugcomp] at bay. By introducing new feature, new behaviour,
+it adds some amount of complexity to the system (codebase, product, mental understanding).
+And moreover, this complexity starts to interact with other complexities that were shipped earlier.
+And it can accelerate by the growth of factorial, as N + 1 feature needs to be in harmony with N features,
+N + 2 with N + 1 and so on.
+
+By making concious decision to remove something once in a while, developer make sure that the next new thing gets more attention.
+It allows focusing more on building a thing, and not “how this thing will interact with other things”.
+Everyone understands how things work, as there is only a number of things to keep track of.
+
 ## Books
 
 - [Data-Oriented Design](./data-oriented-design.md)
@@ -53,6 +63,7 @@ Has it's own [section](./web.md).
 - [Computer Systems A Programmer’s Perspective][compsys] about low-level C programming
 
 [grug]: https://grugbrain.dev/
+[grugcomp]: https://grugbrain.dev/#grug-on-complexity
 [tao]: https://www.mit.edu/~xela/tao.html
 [notesonsp]: https://www.cs.utexas.edu/users/EWD/ewd02xx/EWD249.PDF
 [riskv]: https://riscv-programming.org/book/riscv-book.html
