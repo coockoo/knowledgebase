@@ -11,3 +11,4 @@
   Here is the talk from the creator about this language.
 
   Takeaway: it's a simple and powerful programming language with cool features. Low level.
+  For example, tests will fail if you have a memory leak, which is pretty cool.
