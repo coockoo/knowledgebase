@@ -57,3 +57,29 @@ Popular questions:
 
   So key renaming is needed too to have consistency.
   And key renaming in enum is no different to renaming one of the string values in union type.
+
+## Discriminated unions
+
+[Discriminated unions][discuni] is a powerful TypeScript version of [Tagged unions][taguni] concept.
+
+Unlike Haskell (data types), the tag, or discriminant, is just a property in each object type.
+Each variant has an identical property with a different unit type.
+
+```ts
+// this example implements a state machine that has it's own value based on the type field
+type State =
+  | { type: "initial" }
+  | { type: "loading", query: Record<string, string> }
+  | { type: "ready", data: Record<string, unknown> }
+  | { type: "error", error: Error }
+```
+
+## Dynamic type unions
+
+TODO: to be added:
+
+- type union from object
+- type union from array
+
+[discuni]: https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes-func.html#discriminated-unions
+[taguni]: https://en.wikipedia.org/wiki/Tagged_union
