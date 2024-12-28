@@ -60,6 +60,10 @@ Has it's own section [here](./typescript.md).
 - [Crafting Interpreters][interpreters] - A great book about creating interpreters.
 - [HPACK][hpack] - silent killer feature of http/2
 
+## Wow things
+
+- [How I Built an NFC Movie Library for my Kids][nfckids].
+
 [gettinggit]: https://vimeo.com/14629850
 [ankisrs]: https://www.juliensobczak.com/inspect/2022/05/30/anki-srs.html
 [orbmech]: http://www.braeunig.us/space/orbmech.htm
@@ -72,3 +76,4 @@ Has it's own section [here](./typescript.md).
 [blockinnut]: https://arxiv.org/pdf/2205.01091.pdf
 [interpreters]: https://craftinginterpreters.com/
 [hpack]: https://blog.cloudflare.com/hpack-the-silent-killer-feature-of-http-2
+[nfckids]: https://simplyexplained.com/blog/how-i-built-an-nfc-movie-library-for-my-kids/
