@@ -40,6 +40,26 @@ Everyone understands how things work, as there is only a number of things to kee
 
 Has it's own [section](./functional.md)
 
+## Hindley-Milner Type System
+
+Nice explanation about type inferrence of [Hindley-Milner][hm].
+It has a tractable algorithm for determining types from untyped syntax
+- it supports polymorphic functions;
+- there is a "best" principal type (if there is one or more types of function or value);
+- **the principal type can be inferred without requiring any type declarations**;
+
+For example: if `a: int` and `b: int` then `a + b` is also `int` without need of doing type declaration.
+
+"Damas-Hindley-Milner inference two ways" [article][type-inf] about type inferrence.
+It delves (haha, imagine using this word unironically) into this topic:
+- impelemtation of Algorithm W and Algorithm J for type inferrence;
+```haskell
+infer_w :: Expr -> Context -> [Subst, MonoType]
+```
+- let polymorphism (type variables are implicitly quantified at let bindings);
+- Algorithm M (w + third parameter to the inference function, which is the monotype that you expect the expression to have);
+- etc (like inferrence of more complex data types);
+
 ## Nice to read articles
 
 - [The Grug Brained Developer][grug] from creator of HTMX;
@@ -68,3 +88,5 @@ Has it's own [section](./web.md).
 [notesonsp]: https://www.cs.utexas.edu/users/EWD/ewd02xx/EWD249.PDF
 [riskv]: https://riscv-programming.org/book/riscv-book.html
 [compsys]: https://www.cs.sfu.ca/~ashriram/Courses/CS295/assets/books/CSAPP_2016.pdf
+[type-inf]: https://bernsteinbear.com/blog/type-inference/
+[hm]: https://stackoverflow.com/questions/399312/what-is-hindley-milner/399392
