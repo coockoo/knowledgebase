@@ -72,6 +72,30 @@ infer_w :: Expr -> Context -> [Subst, MonoType]
   Collection of stories, collected in the spiritual format about programming.
   Not much educational, but rather entertaining and thought provoking.
 
+## The Power of 10
+
+NASA's [Rules for Developing Safety-Critical Code][poweroften].
+
+## Tiger Style
+
+[Tiger Style][tigerstyle] from the creators of the TigerBeetle database.
+
+> “Simplicity and elegance are unpopular because they require hard work and discipline to achieve” — Edsger Dijkstra
+
+> “the simple and elegant systems tend to be easier and faster to design and get right, more efficient in execution, and much more reliable” — Edsger Dijkstra
+
+Zero technical debt policy. Do it right the first time.
+Design/Implementation problem solution is cheaper than production problem.
+
+- use simple, explicit control flow for clarity;
+- put limit on everything (in reality everything has a limit);
+- the only way to handle corrupt code is to crash it;
+- assert arguments and return values (love this one);
+- assert positive (expected) AND negative (not expected) spaces;
+- all memory must be statically allocated at startup (wow);
+
+And other stuff.
+
 ## Web
 
 Has it's own [section](./web.md).
@@ -90,3 +114,5 @@ Has it's own [section](./web.md).
 [compsys]: https://www.cs.sfu.ca/~ashriram/Courses/CS295/assets/books/CSAPP_2016.pdf
 [type-inf]: https://bernsteinbear.com/blog/type-inference/
 [hm]: https://stackoverflow.com/questions/399312/what-is-hindley-milner/399392
+[tigerstyle]: https://github.com/tigerbeetle/tigerbeetle/blob/main/docs/TIGER_STYLE.md
+[poweroften]: https://web.eecs.umich.edu/~imarkov/10rules.pdf
