@@ -1,5 +1,21 @@
 # Web
 
+## Import Map
+
+[Import Map][importmap] is a JSON that provides a mapping between the text used as the module specifier
+in an `import` statement or `import()` operator
+
+```html
+<script type="importmap">
+  {
+    "imports": {
+      "square": "./module/shapes/square.js",
+      "circle": "https://example.com/shapes/circle.js"
+    }
+  }
+</script>
+```
+
 ## TCP
 
 [TCP][tcpspec] is a bidirectional protocol (client sending request, server sending response).
@@ -50,3 +66,4 @@ If content didn't change by given etag value – send 304, if changed – send c
 Google Cloud supports it out of the box.
 
 [tcpspec]: https://www.ietf.org/rfc/rfc793.txt
+[importmap]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap
