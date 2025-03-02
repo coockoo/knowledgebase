@@ -59,6 +59,7 @@ Has it's own section [here](./typescript.md).
 - [Migrating Netflix to GraphQL Safely][netflixgql] – How Netflix migrated to GraphQL.
 - [Crafting Interpreters][interpreters] - A great book about creating interpreters.
 - [HPACK][hpack] - silent killer feature of http/2
+- [Competitve Programmer's Handbook][cph] 
 
 ## Wow things
 
@@ -77,3 +78,4 @@ Has it's own section [here](./typescript.md).
 [interpreters]: https://craftinginterpreters.com/
 [hpack]: https://blog.cloudflare.com/hpack-the-silent-killer-feature-of-http-2
 [nfckids]: https://simplyexplained.com/blog/how-i-built-an-nfc-movie-library-for-my-kids/
+[cph]: https://cses.fi/book/book.pdf
