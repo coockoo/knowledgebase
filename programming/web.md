@@ -74,6 +74,23 @@ ACK does not occupy sequence number space (if it did, we would wind up ACKing AC
 
 _note: tcp spec is so much better than any tutorial_
 
+## HTTP
+
+[HTTP][httpspec]
+
+This will listen to the TCP on given port and then send some TCP message.
+This message can be HTTP protocol mesage.
+
+```sh
+nc -l 42069
+# and in other tab/window/session
+curl localhost:42069
+# or
+echo "GET / HTTP/1.1\r\n\r\n" | nc localhost 42069
+```
+
+The term **CRLF** refers to Carriage Return (ASCII 13, \r) Line Feed (ASCII 10, \n).
+
 ## Etag
 
 Used to save bandwidth and not to send huge payloads.
@@ -81,4 +98,5 @@ If content didn't change by given etag value – send 304, if changed – send c
 Google Cloud supports it out of the box.
 
 [tcpspec]: https://www.ietf.org/rfc/rfc793.txt
+[httpspec]: https://www.ietf.org/rfc/rfc9110.txt
 [importmap]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap
