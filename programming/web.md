@@ -59,6 +59,21 @@ SND.NXT +%= SEG.SEQ + SEG.LEN
 
 Since the space is finite, all arithmetic dealing with sequence numbers must be performed modulo 2**32.
 
+Why 3-way needed? Both client and server need to sync their `SEQ` numbers and `ACK` them.
+
+```
+    TCP A (Client)                                        TCP B (Server)
+1.  CLOSED                                                LISTEN
+2.  SYN-SENT    --> <SEQ=100><CTL=SYN>                --> SYN-RECEIVED
+3.  ESTABLISHED <-- <SEQ=300><ACK=101><CTL=SYN,ACK>   <-- SYN-RECEIVED
+4.  ESTABLISHED --> <SEQ=101><ACK=301><CTL=ACK>       --> ESTABLISHED
+5.  ESTABLISHED --> <SEQ=101><ACK=301><CTL=ACK><DATA> --> ESTABLISHED
+  ```
+
+ACK does not occupy sequence number space (if it did, we would wind up ACKing ACK's!).
+
+_note: tcp spec is so much better than any tutorial_
+
 ## Etag
 
 Used to save bandwidth and not to send huge payloads.
