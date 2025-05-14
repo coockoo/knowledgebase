@@ -100,6 +100,14 @@ And other stuff.
 
 Has it's own [section](./web.md).
 
+## OS
+
+### POSIX
+
+**POSIX** (Portable Operating System Interface) is an API for operating systems. Standardized.
+The main purpose of POSIX is to allow developers to write programs that can run
+on any POSIX-compliant operating system.
+
 ## To Read
 
 - [Notes on Structured Programming][notesonsp] by Edsger W. Dijkstra
