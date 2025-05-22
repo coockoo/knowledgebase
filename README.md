@@ -58,7 +58,6 @@ Has it's own section [here](./typescript.md).
 - [Minimum Viable Finance][mvf] – finances for dummies for companies.
 - [Migrating Netflix to GraphQL Safely][netflixgql] – How Netflix migrated to GraphQL.
 - [Crafting Interpreters][interpreters] - A great book about creating interpreters.
-- [HPACK][hpack] - silent killer feature of http/2
 - [Competitve Programmer's Handbook][cph] 
 
 ## Wow things
@@ -76,6 +75,5 @@ Has it's own section [here](./typescript.md).
 [idealbusiness]: https://www.beterinbeleggen.nl/pdf/tsm/The-Perfect-Business-Richard-Russell.pdf
 [blockinnut]: https://arxiv.org/pdf/2205.01091.pdf
 [interpreters]: https://craftinginterpreters.com/
-[hpack]: https://blog.cloudflare.com/hpack-the-silent-killer-feature-of-http-2
 [nfckids]: https://simplyexplained.com/blog/how-i-built-an-nfc-movie-library-for-my-kids/
 [cph]: https://cses.fi/book/book.pdf

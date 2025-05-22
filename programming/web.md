@@ -91,6 +91,17 @@ echo "GET / HTTP/1.1\r\n\r\n" | nc localhost 42069
 
 The term **CRLF** refers to Carriage Return (ASCII 13, \r) Line Feed (ASCII 10, \n).
 
+### HTTP/2
+
+[HPACK][hpack] - silent killer feature of http/2
+
+[HPACK][hpackspec] is a header compression algorithm. Three methods of compression:
+- static table (predefined, most commonly used, compressed in 1-2 bytes);
+- dynamic table
+  - only header name will be complressed in 1-2 bytes;
+  - for repetetive headers (cookie for example) in consecutive requests, those values will be in this table;
+- huffman encoding (everything else, compression is about ~30%);
+
 ## Etag
 
 Used to save bandwidth and not to send huge payloads.
@@ -100,3 +111,5 @@ Google Cloud supports it out of the box.
 [tcpspec]: https://www.ietf.org/rfc/rfc793.txt
 [httpspec]: https://www.ietf.org/rfc/rfc9110.txt
 [importmap]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap
+[hpack]: https://blog.cloudflare.com/hpack-the-silent-killer-feature-of-http-2
+[hpackspec]: https://httpwg.org/specs/rfc7541.html#static.table.definition
